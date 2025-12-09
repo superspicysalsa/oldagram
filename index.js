@@ -29,8 +29,38 @@ const posts = [
 ]
 
 
+const main = document.getElementById("mainPost")
+let post = ""
+console.log(post)
 
+function renderPost() {
+    for (let i=0; i< posts.length ; i++) {
+        post += `   
+        <section>
+            <div class="flex-au margin0">
+                <img class="post-avatar margin0" src="images/avatar-vangogh.jpg">
+                <div class="flex-ul">
+                    <h1 class="margin0">${posts[i].name}</h1>
+                    <h2 class="margin0">${posts[i].location}</h2>
+                </div>
+            </div>
+            <img class="img-post margin0" src="images/post-vangogh.jpg">
+            
+            <div class="three-icons">
+                <img class="margin0" src="/images/icon-heart.png">
+                <img class="margin0" src="/images/icon-comment.png">
+                <img class="margin0" src="/images/icon-dm.png">
+            </div>
 
-function renderPost {
-    
+            <h3 class="likes margin0">${posts[i].likes}</h3>
+            <div class="user-caption">
+                <h3 class="username margin0">${posts[i].username}</h3> 
+                <span class="comment margin0">${posts[i].comment}</span>  
+            </div>
+        </section> `
+    } 
+    main.innerHTML = post
+    console.log(post)
 }
+
+renderPost()
