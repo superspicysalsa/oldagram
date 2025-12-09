@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.logo {
+    width: 300px;
+}
+
+.avatar, .post-avatar {
+    border-radius: 100%;
+    width: 70px;
+    height:fit-content;
+    margin: 30px;
+}
+
+header {
+    border-bottom: 2px solid #C6C6C6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#wrapper {
+    width: 750px;
+    margin: 0 auto; 
+}
+
+.flex-au {
+    display: flex;
+    justify-content: start;
+    padding: 21px;
+    gap: 10px;
+}
+
+.flex-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+}
+
+.flex-ul h1 {
+    font-size: 27px;
+}
+
+.flex-ul h2 {
+    font-weight: 400;
+    font-size: 25px;   
+}
+
+/* utility class 0 margin */
+.margin0 {
+    margin: 0;
+}
+
+.img-post {
+    width: 750px;
+    margin-bottom: 30px;
+}
+
+.three-icons {
+    display: flex;
+    gap: 25px;
+    padding-left: 15px;
+}
+
+.three-icons img {
+    width: 50px;
+
+}
